@@ -218,7 +218,7 @@ ul li a:hover{
 
 .container-2{
     width: 50%;
-    height: 40vh;
+    height: 50vh;
     margin: 30px auto;
     padding: 50px;
     background: linear-gradient(to right, rgba(49, 49, 49, 0.932), rgba(87, 85, 85, 0.849));
@@ -243,7 +243,9 @@ ul li a:hover{
     align-items: center;
 }
 
-.card:hover{
-    transform: translateY(-20px);
+.skills .container .card:hover, 
+.skills-2 .container-2 .card:hover{
+    transform: scale(1.2)  translateY(-40px);
+    transition: transform 0.2s ease;
     box-shadow: 8px 9px 6px rgba(0, 0, 0, 0.466);
 }
