@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+}
+
+header::before{
+    content: "";
+    height: 20em;
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+    background-image: url('imgs/Dogs.jpg');
+    object-fit: cover;
+    border-radius: 30%;
+    z-index: 2;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(211, 211, 211, 0.932);
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.925);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 2;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.menu ul li{
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.cnt_btn a{
+    font-weight: 900;
+}
+
+ul li a:hover{
+    border-bottom: 4px rgb(221, 19, 19) solid;
+}
+
+.cnt_btn{
+    padding: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 4px rgba(255, 255, 255, 0.705) solid;
+    background-color: rgba(0, 0, 0, 0.925);
+    border-radius: 20px;
+}
+
+.cnt_btn:hover{
+    transition: ease-in 0.25s;
+    background-color: rgba(163, 9, 9, 0.671);
+    
+}
+
+.landing{
+    width: 2;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.landing h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.landing h2{
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.social{
+    height: 150px;
+    width: 50px;
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+}
+
+.icon:nth-child(odd){
+    margin: 30px 0;
+}
+
+.icon:hover{
+    transform: scale(1.5);
+    transition: ease;
+    transition-duration: 0.2s;
+}
+
+.grid_sec{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0%;
+    left: -4%;
+}
+
+.circle1{
+    height: 700px;
+    width: 750px;
+    background-color: rgba(111, 161, 177, 0.945);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5%;
+    left:-5%;
+}
+
+.circle2{
+    height: 450px;
+    width: 450px;
+    background-color: rgba(100, 135, 180, 0.644);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+}
+
+.circle3{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(109, 95, 189, 0.61);
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left:70%;
+    z-index: 1;
+}
+
+.skills{
+    width: 100%;
+    height: 100vh;
+}
+
+.skills-2{
+    width: 100%;
+    height: 65vh;
+}
+
+.skills_head{
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.skills div h1{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.75rem;
+}
+
+.container{
+    width: 80%;
+    height: 50vh;
+    margin: 30px auto;
+    padding: 70px;
+    background: linear-gradient(to right, rgba(63, 133, 155, 0.945), rgba(111, 161, 177, 0.945));
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-2{
+    width: 50%;
+    height: 40vh;
+    margin: 30px auto;
+    padding: 50px;
+    background: linear-gradient(to right, rgba(49, 49, 49, 0.932), rgba(87, 85, 85, 0.849));
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    color: white;
+    font-family: 'VT323';
+    font-size: 2rem;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 8px 9px 6px rgba(0, 0, 0, 0.466);
+}
